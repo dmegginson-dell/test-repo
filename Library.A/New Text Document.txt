@@ -1,1 +1,0 @@
-gitindex.cmd /debug /source=. /symbols=.\Library.A\bin\Debug
