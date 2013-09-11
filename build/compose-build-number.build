@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project name="Common" default="build" debug="true">
+  <property name="build.number" value="0" unless="${property::exists('build.number')}" />
+  
+  <target name="build">
+    
+	<!-- 
+	Convert the build number into a fully qualified build number.
+	
+	This target tells TeamCity to convert the buildNumber from a single integer into a 
+	fully qualified buildNumber.  
+
+	For example: "23042" might become "develop-5.4.1.23042".
+	-->
+    <property name="branch.name.data" value="default-1.0.0" />
+    <loadfile file="branch_name.txt" property="branch.name.data" />
+    <echo message="##teamcity[buildNumber '${branch.name.data}.${build.number}']" />
+  </target>
+</project>

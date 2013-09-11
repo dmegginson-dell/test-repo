@@ -1,0 +1,15 @@
+<project name="TC.Test" default="all" debug="true">
+	<property name="MSBuildPath" value="C:\WINDOWS\Microsoft.NET\Framework\v3.5\MSBuild.exe"/>    
+	<target name="build">
+		<echo message="Building TC.Test.Build solution"/>	
+		<property name="build-solution" value=".\..\TC.Test.Build.sln"/>
+		
+		<exec program="${MSBuildPath}">
+			<arg line='"${build-solution}"' />
+			<arg line="/property:Configuration=Release" />
+			<arg value="/target:Rebuild" />
+			<arg value="/verbosity:normal" />
+			<arg value="/nologo" />
+		</exec>
+	</target>
+</project>

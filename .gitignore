@@ -1,0 +1,9 @@
+_ReSharper.TC.Test.Build*
+Library.A/bin*
+Library.A/obj*
+Library.B/bin*
+Library.B/obj*
+Library.C/bin*
+Library.C/obj*
+*.suo
+*.DotSettings
