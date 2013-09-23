@@ -5,5 +5,7 @@ Library.B/bin*
 Library.B/obj*
 Library.C/bin*
 Library.C/obj*
+Console.App/bin*
+Console.App/obj*
 *.suo
 *.DotSettings
