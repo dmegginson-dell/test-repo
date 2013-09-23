@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TC.Test.Build.Library.B
 {
-    public class Bar
+    public class Bar : A.Bar
     {
     }
 }
